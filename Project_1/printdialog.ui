@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PrintDialog</class>
+ <widget class="QDialog" name="PrintDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>847</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="phieukiemke">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>10</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>PHIẾU KIỂM KÊ</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="formcode">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Mã Phiếu: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="staffname">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Nhân viên kiểm kê: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Roomname">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Kiểm kê tại phòng: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkingday">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>70</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ngày kiểm kê:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="position">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>100</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Chức vụ:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="roomcode">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>130</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Mã phòng:</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="assetWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>471</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <column>
+    <property name="text">
+     <string>Tên tài sản</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Số lượng</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tình trạng</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLineEdit" name="formCodeEdit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>70</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="StaffNameCode">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>100</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="RoomNameEdit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>130</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dayEdit">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>70</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="positionEdit">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>100</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="roomCodeEdit">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>130</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="checkBtn">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>400</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Kết thúc</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="formcode_2">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>200</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Tên tài sản:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="formcode_3">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>230</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Số lượng:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="formcode_4">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>260</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Tình trạng:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="assetNameEdit">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>200</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="AssetQuantityEdit">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>230</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="statusEdit">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>260</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="assetsBtn">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>300</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Thêm Tài sản</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
